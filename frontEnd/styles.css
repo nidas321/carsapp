@@ -1,0 +1,49 @@
+/* CSS styles for the car container */
+#carContainer {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap to the next row */
+  gap: 20px; /* Adjust the gap between cars */
+}
+
+.header {
+  background-color: gray;
+  color: white; /* White text */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* CSS styles for each car item */
+.car-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(
+    25% - 20px
+  ); /* Approximately 4 items in a row with gap included */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-bottom: 20px; /* Add margin to create space between rows */
+}
+
+/* CSS styles for the car title */
+.car-item h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* CSS styles for the car image */
+.car-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* CSS styles for the number plates */
+.car-item h3 {
+  font-size: 1em;
+}
