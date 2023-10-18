@@ -33,9 +33,12 @@ const DELETE_CAR = async (req, res) => {
   }
 };
 
-// const GET_CAR_BY_ID = async (req, res) =>{
-//   try{
-//     const
-//   }
-// }
-export { GET_ALL_CARS, ADD_CAR, DELETE_CAR };
+const GET_CAR_BY_ID = async (req, res) => {
+  try {
+    const car = await db.query(`SELECT * from cars WHERE id=${req.params.id}`);
+  } catch (err) {
+    console.log("ERROR: ", err);
+    res.status(500).json({ response: "something went wrong" });
+  }
+};
+export { GET_ALL_CARS, ADD_CAR, DELETE_CAR, GET_CAR_BY_ID };
