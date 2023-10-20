@@ -3,29 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Add a Car</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <a href="index.html" class="button">
         <button>CARS</button>
       </a>
-
       <a href="addCar.html" class="button">
         <button>ADD CARS</button>
       </a>
+    </header>
+
+    <div class="inputContainer">
+      <h1>Add a Car</h1>
+      <input id="title" placeholder="Car Title" />
+      <input id="image" placeholder="Image URL" />
+      <input id="price" placeholder="Price" />
+      <input id="numberPlates" placeholder="Number Plates" />
+      <button id="submitButton" type="submit">Add Car</button>
     </div>
 
-<div class="inputContainer">
-<h1>Add a car</h1>
-<input id="title" placeholder="Car Title"></input>
-<input id="image" placeholder="Image URL"></input>
-<input id="price" placeholder="Price"></input>
-<input id="numberPlates" placeholder="Number Plates"></input>
-<button id="submitButton" type="submit">Add Car</button>
-</div>
-
-    <script src="addCar.js" type="module"></script>
+    <script src="./addCar.js"></script>
   </body>
 </html>
